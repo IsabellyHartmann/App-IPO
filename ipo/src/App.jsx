@@ -40,7 +40,7 @@ function Inicio() {
 // Componente ClientesList (Funcional conforme Exercício 3)
 function ClientesList() {
   return (<div className="container">
-    <h2>Striped Rows<button className="btn btn-primary"><i className="fa fa-plus"></i> Novo Cliente</button>
+    <h2>Clientes<button className="btn btn-primary"><i className="fa fa-plus"></i> Novo Cliente</button>
       <button className="btn btn-primary"><i className="fa fa-plus"></i> Atualizar</button></h2>
 
     <table className="table table-striped">
