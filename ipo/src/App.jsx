@@ -29,7 +29,13 @@ function App() {
 // Estas páginas serão criadas nas próximas etapas
 
 function Inicio() {
-  return (<h2>Bem-vindo ao sistema IPO</h2>);
+  return <div class="container">
+  <div class="jumbotron">
+    <h1>Centro de Inspecões de Automóveis</h1>      
+    <p>IPO - ESDS1</p>
+    
+  </div>    
+</div>
 }
 
 function ClientesList() {
