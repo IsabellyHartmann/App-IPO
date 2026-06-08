@@ -39,12 +39,54 @@ function Inicio() {
 
 // Componente ClientesList (Funcional conforme Exercício 3)
 function ClientesList() {
-  return (<h2>Página de Clientes;
-    <button className="btn btn-primary">
-      <i className="fa fa-plus"></i>
-      Novo Cliente
-    </button>
-  </h2>);
+  return (<div className="container">
+    <h2>Striped Rows<button className="btn btn-primary"><i className="fa fa-plus"></i> Novo Cliente</button>
+      <button className="btn btn-primary"><i className="fa fa-plus"></i> Atualizar</button></h2>
+
+    <table className="table table-striped">
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th>Nome</th>
+          <th>Morada</th>
+          <th>NIF</th>
+          <th>Opções</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>001</td>
+          <td>Isbelly Hartmann</td>
+          <td>Gondifelos</td>
+          <td>298498855</td>
+          <td>
+            <button className="btn btn-sm btn-outline-primary">Editar</button>
+            <button className="btn btn-sm btn-outline-danger">Excluir</button>
+          </td>
+        </tr>
+        <tr>
+          <td>002</td>
+          <td>Rodrigo Gonçalves</td>
+          <td>Gondifelos</td>
+          <td>987654321</td>
+          <td>
+            <button className="btn btn-sm btn-outline-primary">Editar</button>
+            <button className="btn btn-sm btn-outline-danger">Excluir</button>
+          </td>
+        </tr>
+        <tr>
+          <td>003</td>
+          <td>Tiago Dias</td>
+          <td>Paços de Ferreira</td>
+          <td>456789123</td>
+          <td>
+            <button className="btn btn-sm btn-outline-primary">Editar</button>
+            <button className="btn btn-sm btn-outline-danger">Excluir</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>);
 
 }
 
