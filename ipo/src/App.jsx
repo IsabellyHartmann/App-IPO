@@ -43,7 +43,7 @@ function ClientesList() {
     <h2>Clientes
       <button className="btn btn-dark float-right mr-2"><i className="fa fa-refresh"></i> Atualizar</button>
       <button className="btn btn-dark float-right mr-2"><i className="fa fa-plus"></i> Novo Cliente</button>
-      
+
     </h2>
 
     <table className="table table-striped">
@@ -63,9 +63,9 @@ function ClientesList() {
           <td>Gondifelos</td>
           <td>298498855</td>
           <td>
-            <button className="btn btn-dark text-white   mr-2"><i className="fa fa-eye"></i> </button>
-            <button className="btn btn-dark text-white   mr-2"><i className="fa fa-pencil"></i>  </button>
-            <button className="btn btn-dark text-white   mr-2"><i className="fa fa-trash"></i> </button>
+            <button className="btn btn-dark text-white   mr-2"><i className="fa fa-eye"></i></button>
+            <button className="btn btn-dark text-white   mr-2"><i className="fa fa-pencil"></i></button>
+            <button className="btn btn-dark text-white   mr-2"><i className="fa fa-trash"></i></button>
           </td>
         </tr>
         <tr>
@@ -74,9 +74,9 @@ function ClientesList() {
           <td>Gondifelos</td>
           <td>987654321</td>
           <td>
-               <button className="btn btn-dark text-white   mr-2"><i className="fa fa-eye"></i> </button>
-            <button className="btn btn-dark text-white   mr-2"><i className="fa fa-pencil"></i>  </button>
-            <button className="btn btn-dark text-white   mr-2"><i className="fa fa-trash"></i>  </button>
+            <button className="btn btn-dark text-white   mr-2"><i className="fa fa-eye"></i></button>
+            <button className="btn btn-dark text-white   mr-2"><i className="fa fa-pencil"></i></button>
+            <button className="btn btn-dark text-white   mr-2"><i className="fa fa-trash"></i></button>
           </td>
         </tr>
         <tr>
@@ -85,9 +85,9 @@ function ClientesList() {
           <td>Paços de Ferreira</td>
           <td>456789123</td>
           <td>
-               <button className="btn btn-dark text-white   mr-2"><i className="fa fa-eye"></i> </button>
-            <button className="btn btn-dark text-white   mr-2"><i className="fa fa-pencil"></i>  </button>
-            <button className="btn btn-dark text-white   mr-2"><i className="fa fa-trash"></i>  </button>
+            <button className="btn btn-dark text-white   mr-2"><i className="fa fa-eye"></i></button>
+            <button className="btn btn-dark text-white   mr-2"><i className="fa fa-pencil"></i></button>
+            <button className="btn btn-dark text-white   mr-2"><i className="fa fa-trash"></i></button>
           </td>
         </tr>
       </tbody>
