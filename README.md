@@ -12,3 +12,7 @@ Desenvolver uma aplicação React que permita:
 - Atualizar (PUT)
 - Eliminar (DELETE)
 os registos de Clientes, Veículos e Inspeções através da API em NodeJS.
+
+# Começar a APP
+Colocar no terminal: 
+npm run dev 
