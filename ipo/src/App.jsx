@@ -26,20 +26,26 @@ function App() {
   );
 }
 
-// Estas páginas serão criadas nas próximas etapas
+// Página inicial
 
 function Inicio() {
-  return <div class="container">
-  <div class="jumbotron text-center">
-    <h1>Centro de Inspecões de Automóveis</h1>      
-    <p>IPO - ESDS1</p>
-    
-  </div>    
-</div>
+  return <div className="container">
+    <div className="jumbotron text-center">
+      <h1>Centro de Inspecões de Automóveis</h1>
+      <p>IPO - ESDS1</p>
+    </div>
+  </div>
 }
 
+// Componente ClientesList (Funcional conforme Exercício 3)
 function ClientesList() {
-  return (<h2>Página de Clientes</h2>);
+  return (<h2>Página de Clientes;
+    <button className="btn btn-primary">
+      <i className="fa fa-plus"></i>
+      Novo Cliente
+    </button>
+  </h2>);
+
 }
 
 function VeiculosList() {
@@ -51,3 +57,4 @@ function InspecoesList() {
 }
 
 export default App
+

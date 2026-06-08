@@ -15,4 +15,9 @@ os registos de Clientes, Veículos e Inspeções através da API em NodeJS.
 
 # Começar a APP
 Colocar no terminal: 
+Para entrar na pasta
+cd ipo
 npm run dev 
+
+# Documento
+https://drive.google.com/file/d/1wMD12KRlEvEyg4ee-tCYkj1ESSeQVcYB/view
