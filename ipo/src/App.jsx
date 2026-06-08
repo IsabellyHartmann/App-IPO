@@ -31,7 +31,7 @@ function App() {
 function Inicio() {
   return <div className="container">
     <div className="jumbotron text-center">
-      <h1>Centro de Inspecões de Automóveis</h1>
+      <h1>Centro de Inspeções de Automóveis</h1>
       <p>IPO - ESDS1</p>
     </div>
   </div>
@@ -40,8 +40,11 @@ function Inicio() {
 // Componente ClientesList (Funcional conforme Exercício 3)
 function ClientesList() {
   return (<div className="container">
-    <h2>Clientes<button className="btn btn-primary"><i className="fa fa-plus"></i> Novo Cliente</button>
-      <button className="btn btn-primary"><i className="fa fa-plus"></i> Atualizar</button></h2>
+    <h2>Clientes
+      <button className="btn btn-dark float-right mr-2"><i className="fa fa-refresh"></i> Atualizar</button>
+      <button className="btn btn-dark float-right mr-2"><i className="fa fa-plus"></i> Novo Cliente</button>
+      
+    </h2>
 
     <table className="table table-striped">
       <thead>
@@ -56,12 +59,13 @@ function ClientesList() {
       <tbody>
         <tr>
           <td>001</td>
-          <td>Isbelly Hartmann</td>
+          <td>Isabelly Hartmann</td>
           <td>Gondifelos</td>
           <td>298498855</td>
           <td>
-            <button className="btn btn-sm btn-outline-primary">Editar</button>
-            <button className="btn btn-sm btn-outline-danger">Excluir</button>
+            <button className="btn btn-dark text-white   mr-2"><i className="fa fa-eye"></i> </button>
+            <button className="btn btn-dark text-white   mr-2"><i className="fa fa-pencil"></i>  </button>
+            <button className="btn btn-dark text-white   mr-2"><i className="fa fa-trash"></i> </button>
           </td>
         </tr>
         <tr>
@@ -70,8 +74,9 @@ function ClientesList() {
           <td>Gondifelos</td>
           <td>987654321</td>
           <td>
-            <button className="btn btn-sm btn-outline-primary">Editar</button>
-            <button className="btn btn-sm btn-outline-danger">Excluir</button>
+               <button className="btn btn-dark text-white   mr-2"><i className="fa fa-eye"></i> </button>
+            <button className="btn btn-dark text-white   mr-2"><i className="fa fa-pencil"></i>  </button>
+            <button className="btn btn-dark text-white   mr-2"><i className="fa fa-trash"></i>  </button>
           </td>
         </tr>
         <tr>
@@ -80,8 +85,9 @@ function ClientesList() {
           <td>Paços de Ferreira</td>
           <td>456789123</td>
           <td>
-            <button className="btn btn-sm btn-outline-primary">Editar</button>
-            <button className="btn btn-sm btn-outline-danger">Excluir</button>
+               <button className="btn btn-dark text-white   mr-2"><i className="fa fa-eye"></i> </button>
+            <button className="btn btn-dark text-white   mr-2"><i className="fa fa-pencil"></i>  </button>
+            <button className="btn btn-dark text-white   mr-2"><i className="fa fa-trash"></i>  </button>
           </td>
         </tr>
       </tbody>
