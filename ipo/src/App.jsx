@@ -30,7 +30,7 @@ function App() {
 
 function Inicio() {
   return <div class="container">
-  <div class="jumbotron">
+  <div class="jumbotron text-center">
     <h1>Centro de Inspecões de Automóveis</h1>      
     <p>IPO - ESDS1</p>
     
