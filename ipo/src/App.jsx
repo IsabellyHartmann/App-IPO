@@ -49,19 +49,19 @@ function ClientesList() {
   useEffect(() => {
     fetchData();
   }, []);
-  const [deleteId, setDeleteId] = useState(null);
-  const [showDeleteModal, setShowDeleteModal] = useState(false);
+  /*const [deleteId, setDeleteId] = useState(null);
+  const [showDeleteModal, setShowDeleteModal] = useState(false);*/
 
 
 // Funções para modal de confirmação de eliminação
-  const openDeleteModal = (id) => {
+  /*const openDeleteModal = (id) => {
     setDeleteId(id);
     setShowDeleteModal(true);
   };
   const closeDeleteModal = () => {
     setDeleteId(null);
     setShowDeleteModal(false);
-  };
+  };*/
 
   const confirmDelete = async (id) => {
     try {
