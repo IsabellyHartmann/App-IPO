@@ -49,6 +49,37 @@ function ClientesList() {
   useEffect(() => {
     fetchData();
   }, []);
+  const [deleteId, setDeleteId] = useState(null);
+  const [showDeleteModal, setShowDeleteModal] = useState(false);
+
+
+// Funções para modal de confirmação de eliminação
+  const openDeleteModal = (id) => {
+    setDeleteId(id);
+    setShowDeleteModal(true);
+  };
+  const closeDeleteModal = () => {
+    setDeleteId(null);
+    setShowDeleteModal(false);
+  };
+
+  const confirmDelete = async (id) => {
+    try {
+      const response = await fetch(API_BASE + '/clientes/' + id, { method: 'DELETE' });
+      const data = await response.json();
+      if (data.success) {
+        fetchData();
+      } else {
+        setMensagemErro(data.message);
+      }
+    } catch {
+      setMensagemErro('Erro ao eliminar cliente');
+    }
+  };
+
+
+
+
   const fetchData = async () => {
     try {
       const response = await fetch(API_BASE + '/clientes');
@@ -104,7 +135,9 @@ function ClientesList() {
               <td style={{ whiteSpace: 'nowrap' }}>
                 <button className="btn btn-dark btn-sm mr-2" ><i className='fa fa-eye' aria-hidden='true'></i></button>
                 <button className="btn btn-dark btn-sm mr-2" ><i className='fa fa-pencil' aria-hidden='true'></i></button>
-                <button className="btn btn-dark btn-sm" ><i className='fa fa-trash' aria-hidden='true'></i></button>
+                <button className="btn btn-dark btn-sm" onClick={() => openDeleteModal(cliente.codcli)}>
+                  <i className='fa fa-trash' aria-hidden='true'></i>
+                </button>
               </td>
             </tr>
           ))}
