@@ -49,19 +49,21 @@ function ClientesList() {
   useEffect(() => {
     fetchData();
   }, []);
-  /*const [deleteId, setDeleteId] = useState(null);
-  const [showDeleteModal, setShowDeleteModal] = useState(false);*/
+  const [deleteId, setDeleteId] = useState(null);
+  const [showDeleteModal, setShowDeleteModal] = useState(false);
 
 
-// Funções para modal de confirmação de eliminação
-  /*const openDeleteModal = (id) => {
+  // Funções para modal de confirmação de eliminação
+  const openDeleteModal = (id) => {
     setDeleteId(id);
     setShowDeleteModal(true);
   };
+
+  // Função para fechar o modal de confirmação de eliminação
   const closeDeleteModal = () => {
     setDeleteId(null);
     setShowDeleteModal(false);
-  };*/
+  };
 
   const confirmDelete = async (id) => {
     try {
@@ -74,6 +76,9 @@ function ClientesList() {
       }
     } catch {
       setMensagemErro('Erro ao eliminar cliente');
+    }
+    finally {
+      closeDeleteModal();
     }
   };
 
@@ -143,6 +148,30 @@ function ClientesList() {
           ))}
         </tbody>
       </table>
+      {showDeleteModal && (
+        <>
+          <div className="modal-backdrop fade show"></div>
+          <div className="modal fade show" style={{ display: 'block' }} tabIndex="-1" role="dialog">
+            <div className="modal-dialog" role="document">
+              <div className="modal-content">
+                <div className="modal-header">
+                  <h5 className="modal-title">Confirmação</h5>
+                  <button type="button" className="close" onClick={closeDeleteModal}>
+                    <span>&times;</span>
+                  </button>
+                </div>
+                <div className="modal-body">
+                  <p>Tem certeza que deseja eliminar este cliente?</p>
+                </div>
+                <div className="modal-footer">
+                  <button type="button" className="btn btn-secondary" onClick={closeDeleteModal}>Cancelar</button>
+                  <button type="button" className="btn btn-danger" onClick={() => confirmDelete(deleteId)}>Confirmar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </>
+      )}
     </>
   );
 }
